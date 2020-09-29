@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pytest  # 引入pytest包
 
 
@@ -36,12 +37,17 @@ def test_d(user):
 
 @pytest.mark.xfail(raises=ZeroDivisionError)
 def test_e():
-    1 / 0
+    assert 1 / 0
 
 
 @pytest.mark.skip(reason="不执行该用例！！因为没写好！！")
 def test_f():
     print("我是测试用例22222")
+
+
+@pytest.mark.xfail()
+def test_g():
+    assert "abc" == "abc"
 
 
 if __name__ == '__main__':
