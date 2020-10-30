@@ -42,11 +42,6 @@ def test_d(user):
     assert user == "yygirl"
 
 
-@pytest.mark.xfail(raises=ZeroDivisionError)
-def test_e():
-    assert 1 / 0
-
-
 @pytest.mark.skip(reason="不执行该用例！！因为没写好！！")
 def test_f():
     print("我是测试用例f")
@@ -61,6 +56,16 @@ def test_f2():
 @pytest.mark.xfail()
 def test_g():
     assert "abc" == "abc"
+
+
+@pytest.mark.xfail(strict=True)
+def test_e():
+    assert 1 / 0
+
+
+@pytest.mark.xfail(raises=ZeroDivisionError)
+def test_e():
+    assert 1 / 0
 
 
 @pytest.mark.parametrize("para1, para2", [(1, 2), (11, 22)])

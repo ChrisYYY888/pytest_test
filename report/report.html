@@ -420,7 +420,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 29-Sep-2020 at 16:43:09 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 30-Oct-2020 at 10:14:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -434,19 +434,19 @@ function filter_table(elem) {
         <td>None</td></tr>
       <tr>
         <td>Packages</td>
-        <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.0.2"}</td></tr>
+        <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.1.2"}</td></tr>
       <tr>
         <td>Platform</td>
         <td>macOS-10.15.7-x86_64-i386-64bit</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"allure-pytest": "2.8.18", "assume": "2.3.2", "base-url": "1.4.2", "bdd": "4.0.1", "cov": "2.10.1", "forked": "1.3.0", "html": "2.1.1", "metadata": "1.10.0", "rerunfailures": "9.1", "selenium": "2.0.1", "sugar": "0.9.4", "timeout": "1.4.2", "variables": "1.9.0", "xdist": "2.1.0"}</td></tr>
+        <td>{"allure-pytest": "2.8.18", "assume": "2.3.3", "base-url": "1.4.2", "bdd": "4.0.1", "cov": "2.10.1", "forked": "1.3.0", "html": "2.1.1", "metadata": "1.10.0", "rerunfailures": "9.1.1", "selenium": "2.0.1", "sugar": "0.9.4", "timeout": "1.4.2", "variables": "1.9.0", "xdist": "2.1.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.8.2</td></tr></table>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.03 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>10 tests ran in 0.14 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">2 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">7 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -456,4 +456,121 @@ function filter_table(elem) {
           <th class="sortable numeric" col="duration">Duration</th>
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_case/test_1.py::test_d::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.fixture()<br/>    def user():<br/>        print(&quot;获取用户名&quot;)<br/>        a = &quot;yygirl&quot;<br/>&gt;       assert a == &quot;yygirl123&quot;<br/><span class="error">E       AssertionError: assert &#x27;yygirl&#x27; == &#x27;yygirl123&#x27;</span><br/><span class="error">E         - yygirl123</span><br/><span class="error">E         ?       ---</span><br/><span class="error">E         + yygirl</span><br/><br/>test_case/test_1.py:37: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_b</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">bbb1 = &#x27;leo&#x27;, bbb2 = &#x27;leo&#x27;<br/><br/>    def test_b(bbb1, bbb2):<br/>        print(&quot;-------&gt;test_b&quot;)<br/>        assert bbb1 == &#x27;leo&#x27;  # 断言成功<br/>&gt;       assert bbb2 == 0  # 断言失败<br/><span class="error">E       AssertionError: assert &#x27;leo&#x27; == 0</span><br/><span class="error">E         +&#x27;leo&#x27;</span><br/><span class="error">E         -0</span><br/><br/>test_case/test_1.py:19: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_c[0]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ccc = 0<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 0 == 2</span><br/><span class="error">E         +0</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_c[1]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ccc = 1<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 1 == 2</span><br/><span class="error">E         +1</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_c[3]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ccc = 3<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 3 == 2</span><br/><span class="error">E         +3</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_g</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[XPASS(strict)]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_h[1-2]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">para1 = 1, para2 = 2<br/><br/>    @pytest.mark.parametrize(&quot;para1, para2&quot;, [(1, 2), (11, 22)])<br/>    def test_h(para1, para2):<br/>&gt;       assert para1 == para2<br/><span class="error">E       assert 1 == 2</span><br/><span class="error">E         +1</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:73: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case/test_1.py::test_h[11-22]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">para1 = 11, para2 = 22<br/><br/>    @pytest.mark.parametrize(&quot;para1, para2&quot;, [(1, 2), (11, 22)])<br/>    def test_h(para1, para2):<br/>&gt;       assert para1 == para2<br/><span class="error">E       assert 11 == 22</span><br/><span class="error">E         +11</span><br/><span class="error">E         -22</span><br/><br/>test_case/test_1.py:73: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="xfailed results-table-row">
+        <tr>
+          <td class="col-result">XFailed</td>
+          <td class="col-name">test_case/test_1.py::test_e</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.xfail(raises=ZeroDivisionError)<br/>    def test_e():<br/>&gt;       assert 1 / 0<br/><span class="error">E       ZeroDivisionError: division by zero</span><br/><br/>test_case/test_1.py:68: ZeroDivisionError<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_case/test_1.py::test_f::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;/Users/yinqiang/PycharmProjects/pytest_test/test_case/test_1.py&#x27;, 45, &#x27;Skipped: 不执行该用例！！因为没写好！！&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">test_case/test_1.py::test_f2::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;/Users/yinqiang/PycharmProjects/pytest_test/test_case/test_1.py&#x27;, 50, &#x27;Skipped: 需要Python3.6版本以上&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_case/test_1.py::test_a</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_case/test_1.py::test_c[2]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
