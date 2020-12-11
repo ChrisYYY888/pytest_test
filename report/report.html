@@ -4,61 +4,61 @@
     <meta charset="utf-8"/>
     <title>Test Report</title>
     <style>body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	/* do not increase min-width as some may use split screens */
-	min-width: 800px;
-	color: #999;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* do not increase min-width as some may use split screens */
+  min-width: 800px;
+  color: #999;
 }
 
 h1 {
-	font-size: 24px;
-	color: black;
+  font-size: 24px;
+  color: black;
 }
 
 h2 {
-	font-size: 16px;
-	color: black;
+  font-size: 16px;
+  color: black;
 }
 
 p {
-    color: black;
+  color: black;
 }
 
 a {
-	color: #999;
+  color: #999;
 }
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 /******************************
  * SUMMARY INFORMATION
  ******************************/
-
 #environment td {
-	padding: 5px;
-	border: 1px solid #E6E6E6;
+  padding: 5px;
+  border: 1px solid #E6E6E6;
 }
 
 #environment tr:nth-child(odd) {
-	background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 
 /******************************
  * TEST RESULT COLORS
  ******************************/
 span.passed, .passed .col-result {
-	color: green;
-}
-span.skipped, span.xfailed, span.rerun, .skipped .col-result, .xfailed .col-result, .rerun .col-result {
-	color: orange;
-}
-span.error, span.failed, span.xpassed, .error .col-result, .failed .col-result, .xpassed .col-result  {
-	color: red;
+  color: green;
 }
 
+span.skipped, span.xfailed, span.rerun, .skipped .col-result, .xfailed .col-result, .rerun .col-result {
+  color: orange;
+}
+
+span.error, span.failed, span.xpassed, .error .col-result, .failed .col-result, .xpassed .col-result {
+  color: red;
+}
 
 /******************************
  * RESULTS TABLE
@@ -68,117 +68,123 @@ span.error, span.failed, span.xpassed, .error .col-result, .failed .col-result, 
  * 3. Sorting items
  *
  ******************************/
-
 /*------------------
  * 1. Table Layout
  *------------------*/
-
 #results-table {
-	border: 1px solid #e6e6e6;
-	color: #999;
-	font-size: 12px;
-	width: 100%
+  border: 1px solid #e6e6e6;
+  color: #999;
+  font-size: 12px;
+  width: 100%;
 }
 
 #results-table th, #results-table td {
-	padding: 5px;
-	border: 1px solid #E6E6E6;
-	text-align: left
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+  text-align: left;
 }
+
 #results-table th {
-	font-weight: bold
+  font-weight: bold;
 }
 
 /*------------------
  * 2. Extra
  *------------------*/
-
 .log:only-child {
-	height: inherit
+  height: inherit;
 }
+
 .log {
-	background-color: #e6e6e6;
-	border: 1px solid #e6e6e6;
-	color: black;
-	display: block;
-	font-family: "Courier New", Courier, monospace;
-	height: 230px;
-	overflow-y: scroll;
-	padding: 5px;
-	white-space: pre-wrap
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  color: black;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  height: 230px;
+  overflow-y: scroll;
+  padding: 5px;
+  white-space: pre-wrap;
 }
+
 div.image {
-	border: 1px solid #e6e6e6;
-	float: right;
-	height: 240px;
-	margin-left: 5px;
-	overflow: hidden;
-	width: 320px
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 320px;
 }
+
 div.image img {
-	width: 320px
+  width: 320px;
 }
+
 div.video {
-	border: 1px solid #e6e6e6;
-	float: right;
-	height: 240px;
-	margin-left: 5px;
-	overflow: hidden;
-	width: 320px
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 320px;
 }
+
 div.video video {
-	overflow: hidden;
-	width: 320px;
-    height: 240px;
+  overflow: hidden;
+  width: 320px;
+  height: 240px;
 }
+
 .collapsed {
-	display: none;
+  display: none;
 }
+
 .expander::after {
-	content: " (show details)";
-	color: #BBB;
-	font-style: italic;
-	cursor: pointer;
+  content: " (show details)";
+  color: #BBB;
+  font-style: italic;
+  cursor: pointer;
 }
+
 .collapser::after {
-	content: " (hide details)";
-	color: #BBB;
-	font-style: italic;
-	cursor: pointer;
+  content: " (hide details)";
+  color: #BBB;
+  font-style: italic;
+  cursor: pointer;
 }
 
 /*------------------
  * 3. Sorting items
  *------------------*/
 .sortable {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .sort-icon {
-	font-size: 0px;
-	float: left;
-	margin-right: 5px;
-	margin-top: 5px;
-	/*triangle*/
-	width: 0;
-	height: 0;
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
+  font-size: 0px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  /*triangle*/
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 
 .inactive .sort-icon {
-	/*finish triangle*/
-	border-top: 8px solid #E6E6E6;
+  /*finish triangle*/
+  border-top: 8px solid #E6E6E6;
 }
 
 .asc.active .sort-icon {
-	/*finish triangle*/
-	border-bottom: 8px solid #999;
+  /*finish triangle*/
+  border-bottom: 8px solid #999;
 }
 
 .desc.active .sort-icon {
-	/*finish triangle*/
-	border-top: 8px solid #999;
+  /*finish triangle*/
+  border-top: 8px solid #999;
 }
 </style></head>
   <body onLoad="init()">
@@ -194,7 +200,7 @@ function toArray(iter) {
     return Array.prototype.slice.call(iter);
 }
 
-function find(selector, elem) {
+function find(selector, elem) { // eslint-disable-line no-redeclare
     if (!elem) {
         elem = document;
     }
@@ -210,87 +216,87 @@ function find_all(selector, elem) {
 
 function sort_column(elem) {
     toggle_sort_states(elem);
-    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
-    var key;
-    if (elem.classList.contains('numeric')) {
-        key = key_num;
-    } else if (elem.classList.contains('result')) {
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
         key = key_result;
+    } else if (elem.classList.contains('links')) {
+        key = key_link;
     } else {
         key = key_alpha;
     }
     sort_table(elem, key(colIndex));
 }
 
-function show_all_extras() {
+function show_all_extras() { // eslint-disable-line no-unused-vars
     find_all('.col-result').forEach(show_extras);
 }
 
-function hide_all_extras() {
+function hide_all_extras() { // eslint-disable-line no-unused-vars
     find_all('.col-result').forEach(hide_extras);
 }
 
 function show_extras(colresult_elem) {
-    var extras = colresult_elem.parentNode.nextElementSibling;
-    var expandcollapse = colresult_elem.firstElementChild;
-    extras.classList.remove("collapsed");
-    expandcollapse.classList.remove("expander");
-    expandcollapse.classList.add("collapser");
+    const extras = colresult_elem.parentNode.nextElementSibling;
+    const expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
 }
 
 function hide_extras(colresult_elem) {
-    var extras = colresult_elem.parentNode.nextElementSibling;
-    var expandcollapse = colresult_elem.firstElementChild;
-    extras.classList.add("collapsed");
-    expandcollapse.classList.remove("collapser");
-    expandcollapse.classList.add("expander");
+    const extras = colresult_elem.parentNode.nextElementSibling;
+    const expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
 }
 
 function show_filters() {
-    var filter_items = document.getElementsByClassName('filter');
-    for (var i = 0; i < filter_items.length; i++)
+    const filter_items = document.getElementsByClassName('filter');
+    for (let i = 0; i < filter_items.length; i++)
         filter_items[i].hidden = false;
 }
 
 function add_collapse() {
     // Add links for show/hide all
-    var resulttable = find('table#results-table');
-    var showhideall = document.createElement("p");
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
     showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
                             '<a href="javascript:hide_all_extras()">Hide all details</a>';
     resulttable.parentElement.insertBefore(showhideall, resulttable);
 
     // Add show/hide link to each result
     find_all('.col-result').forEach(function(elem) {
-        var collapsed = get_query_parameter('collapsed') || 'Passed';
-        var extras = elem.parentNode.nextElementSibling;
-        var expandcollapse = document.createElement("span");
-        if (extras.classList.contains("collapsed")) {
-            expandcollapse.classList.add("expander")
+        const collapsed = get_query_parameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
         } else if (collapsed.includes(elem.innerHTML)) {
-            extras.classList.add("collapsed");
-            expandcollapse.classList.add("expander");
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
         } else {
-            expandcollapse.classList.add("collapser");
+            expandcollapse.classList.add('collapser');
         }
         elem.appendChild(expandcollapse);
 
-        elem.addEventListener("click", function(event) {
-            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
                 show_extras(event.currentTarget);
             } else {
                 hide_extras(event.currentTarget);
             }
         });
-    })
+    });
 }
 
 function get_query_parameter(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
 
-function init () {
+function init () { // eslint-disable-line no-unused-vars
     reset_sort_headers();
 
     add_collapse();
@@ -300,52 +306,51 @@ function init () {
     sort_column(find('.initial-sort'));
 
     find_all('.sortable').forEach(function(elem) {
-        elem.addEventListener("click",
-                              function(event) {
-                                  sort_column(elem);
-                              }, false)
+        elem.addEventListener('click',
+            function() {
+                sort_column(elem);
+            }, false);
     });
-
-};
+}
 
 function sort_table(clicked, key_func) {
-    var rows = find_all('.results-table-row');
-    var reversed = !clicked.classList.contains('asc');
-    var sorted_rows = sort(rows, key_func, reversed);
+    const rows = find_all('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sorted_rows = sort(rows, key_func, reversed);
     /* Whole table is removed here because browsers acts much slower
      * when appending existing elements.
      */
-    var thead = document.getElementById("results-table-head");
+    const thead = document.getElementById('results-table-head');
     document.getElementById('results-table').remove();
-    var parent = document.createElement("table");
-    parent.id = "results-table";
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
     parent.appendChild(thead);
     sorted_rows.forEach(function(elem) {
         parent.appendChild(elem);
     });
-    document.getElementsByTagName("BODY")[0].appendChild(parent);
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
 }
 
 function sort(items, key_func, reversed) {
-    var sort_array = items.map(function(item, i) {
+    const sort_array = items.map(function(item, i) {
         return [key_func(item), i];
     });
 
     sort_array.sort(function(a, b) {
-        var key_a = a[0];
-        var key_b = b[0];
+        const key_a = a[0];
+        const key_b = b[0];
 
         if (key_a == key_b) return 0;
 
         if (reversed) {
-            return (key_a < key_b ? 1 : -1);
+            return key_a < key_b ? 1 : -1;
         } else {
-            return (key_a > key_b ? 1 : -1);
+            return key_a > key_b ? 1 : -1;
         }
     });
 
     return sort_array.map(function(item) {
-        var index = item[1];
+        const index = item[1];
         return items[index];
     });
 }
@@ -356,16 +361,17 @@ function key_alpha(col_index) {
     };
 }
 
-function key_num(col_index) {
+function key_link(col_index) {
     return function(elem) {
-        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+        const dataCell = elem.childNodes[1].childNodes[col_index].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
     };
 }
 
 function key_result(col_index) {
     return function(elem) {
-        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
-                       'Skipped', 'Passed'];
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
         return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
     };
 }
@@ -375,12 +381,12 @@ function reset_sort_headers() {
         elem.parentNode.removeChild(elem);
     });
     find_all('.sortable').forEach(function(elem) {
-        var icon = document.createElement("div");
-        icon.className = "sort-icon";
-        icon.textContent = "vvv";
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
         elem.insertBefore(icon, elem.firstChild);
-        elem.classList.remove("desc", "active");
-        elem.classList.add("asc", "inactive");
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
     });
 }
 
@@ -400,27 +406,27 @@ function toggle_sort_states(elem) {
 }
 
 function is_all_rows_hidden(value) {
-  return value.hidden == false;
+    return value.hidden == false;
 }
 
-function filter_table(elem) {
-    var outcome_att = "data-test-result";
-    var outcome = elem.getAttribute(outcome_att);
-    class_outcome = outcome + " results-table-row";
-    var outcome_rows = document.getElementsByClassName(class_outcome);
+function filter_table(elem) { // eslint-disable-line no-unused-vars
+    const outcome_att = 'data-test-result';
+    const outcome = elem.getAttribute(outcome_att);
+    const class_outcome = outcome + ' results-table-row';
+    const outcome_rows = document.getElementsByClassName(class_outcome);
 
-    for(var i = 0; i < outcome_rows.length; i++){
+    for(let i = 0; i < outcome_rows.length; i++){
         outcome_rows[i].hidden = !elem.checked;
     }
 
-    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
-    var all_rows_hidden = rows.length == 0 ? true : false;
-    var not_found_message = document.getElementById("not-found-message");
+    const rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    const all_rows_hidden = rows.length == 0 ? true : false;
+    const not_found_message = document.getElementById('not-found-message');
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 30-Oct-2020 at 10:14:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 11-Dec-2020 at 10:06:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -440,12 +446,12 @@ function filter_table(elem) {
         <td>macOS-10.15.7-x86_64-i386-64bit</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"allure-pytest": "2.8.18", "assume": "2.3.3", "base-url": "1.4.2", "bdd": "4.0.1", "cov": "2.10.1", "forked": "1.3.0", "html": "2.1.1", "metadata": "1.10.0", "rerunfailures": "9.1.1", "selenium": "2.0.1", "sugar": "0.9.4", "timeout": "1.4.2", "variables": "1.9.0", "xdist": "2.1.0"}</td></tr>
+        <td>{"allure-pytest": "2.8.21", "assume": "2.3.3", "base-url": "1.4.2", "bdd": "4.0.1", "cov": "2.10.1", "forked": "1.3.0", "html": "3.1.0", "metadata": "1.11.0", "rerunfailures": "9.1.1", "selenium": "2.0.1", "sugar": "0.9.4", "timeout": "1.4.2", "variables": "1.9.0", "xdist": "2.1.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.8.2</td></tr></table>
     <h2>Summary</h2>
-    <p>10 tests ran in 0.14 seconds. </p>
+    <p>10 tests ran in 0.13 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">2 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">7 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -453,8 +459,8 @@ function filter_table(elem) {
         <tr>
           <th class="sortable result initial-sort" col="result">Result</th>
           <th class="sortable" col="name">Test</th>
-          <th class="sortable numeric" col="duration">Duration</th>
-          <th>Links</th></tr>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
       <tbody class="error results-table-row">
@@ -465,7 +471,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">@pytest.fixture()<br/>    def user():<br/>        print(&quot;获取用户名&quot;)<br/>        a = &quot;yygirl&quot;<br/>&gt;       assert a == &quot;yygirl123&quot;<br/><span class="error">E       AssertionError: assert &#x27;yygirl&#x27; == &#x27;yygirl123&#x27;</span><br/><span class="error">E         - yygirl123</span><br/><span class="error">E         ?       ---</span><br/><span class="error">E         + yygirl</span><br/><br/>test_case/test_1.py:37: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -474,7 +480,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">bbb1 = &#x27;leo&#x27;, bbb2 = &#x27;leo&#x27;<br/><br/>    def test_b(bbb1, bbb2):<br/>        print(&quot;-------&gt;test_b&quot;)<br/>        assert bbb1 == &#x27;leo&#x27;  # 断言成功<br/>&gt;       assert bbb2 == 0  # 断言失败<br/><span class="error">E       AssertionError: assert &#x27;leo&#x27; == 0</span><br/><span class="error">E         +&#x27;leo&#x27;</span><br/><span class="error">E         -0</span><br/><br/>test_case/test_1.py:19: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -483,7 +489,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ccc = 0<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 0 == 2</span><br/><span class="error">E         +0</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -492,7 +498,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ccc = 1<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 1 == 2</span><br/><span class="error">E         +1</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -501,7 +507,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">ccc = 3<br/><br/>    @pytest.mark.ccc<br/>    def test_c(ccc):<br/>        print(&quot;-------&gt;test_c&quot;)<br/>        print(ccc)<br/>&gt;       assert ccc == 2<br/><span class="error">E       assert 3 == 2</span><br/><span class="error">E         +3</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:30: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -510,7 +516,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[XPASS(strict)]<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -519,7 +525,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">para1 = 1, para2 = 2<br/><br/>    @pytest.mark.parametrize(&quot;para1, para2&quot;, [(1, 2), (11, 22)])<br/>    def test_h(para1, para2):<br/>&gt;       assert para1 == para2<br/><span class="error">E       assert 1 == 2</span><br/><span class="error">E         +1</span><br/><span class="error">E         -2</span><br/><br/>test_case/test_1.py:73: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -528,7 +534,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">para1 = 11, para2 = 22<br/><br/>    @pytest.mark.parametrize(&quot;para1, para2&quot;, [(1, 2), (11, 22)])<br/>    def test_h(para1, para2):<br/>&gt;       assert para1 == para2<br/><span class="error">E       assert 11 == 22</span><br/><span class="error">E         +11</span><br/><span class="error">E         -22</span><br/><br/>test_case/test_1.py:73: AssertionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="xfailed results-table-row">
         <tr>
           <td class="col-result">XFailed</td>
@@ -537,25 +543,25 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">@pytest.mark.xfail(raises=ZeroDivisionError)<br/>    def test_e():<br/>&gt;       assert 1 / 0<br/><span class="error">E       ZeroDivisionError: division by zero</span><br/><br/>test_case/test_1.py:68: ZeroDivisionError<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
-          <td class="col-name">test_case/test_1.py::test_f::setup</td>
+          <td class="col-name">test_case/test_1.py::test_f</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;/Users/yinqiang/PycharmProjects/pytest_test/test_case/test_1.py&#x27;, 45, &#x27;Skipped: 不执行该用例！！因为没写好！！&#x27;)<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
-          <td class="col-name">test_case/test_1.py::test_f2::setup</td>
+          <td class="col-name">test_case/test_1.py::test_f2</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;/Users/yinqiang/PycharmProjects/pytest_test/test_case/test_1.py&#x27;, 50, &#x27;Skipped: 需要Python3.6版本以上&#x27;)<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
